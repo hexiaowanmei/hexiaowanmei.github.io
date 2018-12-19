@@ -1,0 +1,184 @@
+linux操作命令
+计算机是由硬件和软件组成
+ 
+ 硬件的五大部件：
+ -运算器 -|
+ -控制器 -| 中央处理器
+ -存储器  --内存（RAM)
+ -输入设备 -|
+ -输出设备 -| IO设备
+ 
+ 软件的两大类别：
+ -系统软件 - 操作系统（内核+工具程序）
+ -应用软件 - 
+ 
+ Linux系统的内核是Free的
+ 
+ Linux系统最早的内核是由Linus开发的
+ 现在也是由他在管理和维护这个系统的内核版本
+ 
+ 除了Windows系统其他系统几乎都是Unix的衍生品
+ 类Unix操作系统
+ Shell -  壳程序 - 人机交互界面 （人和计算机对话窗口）
+ Shell中的工具和命令
+ who - 查看登录系统用户信息
+ last - 查看最近使用过系统的用户信息
+ useradd(adduser)/userdel - 添加用户/删除用户
+ su - switch user - 切换用户
+ logout / exit - 退出登录
+ reboot/init 6 - 重启服务器
+ shutdown/init 0 - 关机
+ pwd - print working  directory打印当前工作目录
+ cd - change directory
+ etc - 系统配置文件
+ boot- 启动
+ dev - 设备
+ home - 主目录
+ proc - 正在运行的进程
+ ls - 列出文件
+ cat - concatenate - 查看文件
+ cd . . -- 一个点表示当前目录 两个点表示上级目录
+ 
+ ls -a --- 查看隐藏文件
+ ls -al(ls -a-l/ls -l-a) -- 查看文件和文件夹
+ ls -al /  --  查看指定文件和文件夹
+ control + c -- 强行停止程序
+ man --manual-- 查找手册
+ 命令 --hlpe ---- 获得命令帮助
+ 
+ write 用户名 - 给指定用户发信息
+ mesg y/n -- 是否接收别人发送消息
+ wall -- 给所有人发出广播消息
+ 
+ mkdir - make directory - 创建文件夹
+ rmdir - remove empty directory - 删除文件夹
+ touch 文件名 > 文件名 - 将内容重定向到指定的文件
+ wget http://www.sohu.com/ - 联网通过url获取指定文件
+ rm - 删除文件
+ rm - rf - 删除文件夹
+ 
+ uniq -- 去除相邻的重复的内容
+ sort - 给文件排序
+ | - 管道 - 链接两个进程（命令） - 
+ 把前一个进程的输出作为后面一个进程的输入
+ 
+ 解归档 - tar - vxf 归档文件的名字
+ 归档- tar - cxf 归档文件的名字
+ tar是linux系统下的归档文件（类似于windows下的文件
+ 
+ 
+ 
+ 
+ gzip/gunzip -- 压缩/解压缩
+ xz - z / xz -d  -- 压缩/解压缩
+ wc - word count -- 查看数量
+ head / tail - 查看文件的开头或结尾
+ less / more - 分屏查看
+ clear - 清除屏幕输出
+ history - 查看历史命令
+ !历史命令编号 - 
+ cp - copy --拷贝文件或文件夹
+ mv - move --移动文件/文件夹（重命名）
+ 1bit - 8 -- 1Byte
+ 1024B --- 1KB
+ 1024KB -- 1MB
+ 1024KB --- 1GB
+ 1O24GB --1TB
+ 1024TB---1PB
+ 
+  -->
+  <!-- 
+   计算机是由硬件和软件构成的。
+
+硬件的五大部件：
+- 运算器 -|
+- 控制器 -| 中央处理器
+- 存储器 - 内存（RAM）
+- 输入设备 -|
+- 输出设备 -| IO设备
+
+软件的两大类别：
+- 系统软件 - 操作系统（内核+工具程序）
+- 应用软件
+
+Linux系统的内核是Free的
+Linux系统最早的内核是由Linus开发的 现在也是由他在管理和维护这个系统的内核版本
+
+Unix - MINIX
+- IBM - AIX
+- HP - HP-UX
+
+除了Windows系统其他系统几乎都是Unix的衍生品
+类Unix操作系统
+
+Unix - BSD - FreeBSD - Macintosh - macOS - iOS
+Unix - MINIX - Linux - Android
+Unix - Solaris / HP-UX
+
+Shell - 壳程序 - 人机交互界面（人和计算机对话的窗口）
+Shell中的工具和命令
+
+who - 查看登录系统用户的信息
+last - 查看最近使用过系统的用户信息
+
+clear - 清除屏幕输出
+history - 查看历史命令
+!历史命令编号 - 重新执行历史命令
+
+useradd/userdel - 添加/删除用户
+passwd - 修改用户口令
+su - switch user - 切换用户
+
+logout / exit - 退出登录
+reboot / shutdown - 重启 / 关机
+write 用户名 - 给指定用户发送消息
+mesg y/n - 是否接收别人发送的消息
+wall - 给所有人发出广播消息
+
+pwd - print working directory - 打印当前工作目录
+cd - change directory - 改变目录
+ls - list directory contents - 列出目录内容
+
+mkdir 目录名 - make directory - 创建文件夹
+rmdir 目录名 - remove empty directory - 删除空文件夹
+touch 文件名 - 创建一个空文件
+echo 内容 > 文件名 - 将内容重定向到指定的文件
+wget http://www.sohu.com/ - 联网通过URL获取指定文件
+rm - 删除文件
+rm -rf - 删除文件夹
+cp - 拷贝文件或文件夹
+mv - 移动文件或文件夹（重命名）
+
+cat - concatenate - 连接文件内容（查看文件）
+less / more - 分屏查看
+head / tail - 查看文件前面/后面的部分
+sort - 给文件排序
+uniq - 去除相邻的重复内容
+| - 管道 - 连接两个进程（命令）- 把前一个进程的输出作为后面一个进程的输入
+
+gzip / gunzip - 压缩/解压缩
+xz -z / xz -d - 压缩/解压缩
+
+tar是Linux系统下的归档文件（类似于Windows下的rar文件）
+解归档 - tar -xvf 归档文件的名字
+归档 - tar -cvf 归档文件的名字 ./*
+
+Redis - NoSQL
+
+CPython - Python解释器是用C语言实现的
+Jython - Python解释器是用Java语言实现的
+IronPython - Python解释器是用C#语言实现的
+PyPy - Python解释器是用Python语言实现的
+
+获得帮助
+man - manual - 查看帮助手册
+命令 --help - 获得命令的帮助
+
+200Mbps -----25MB
+
+8bit   -------1Byte
+1024B  ------- 1KB
+1024KB ------- 1MB
+1024MB ------- 1GB
+1024GB ------- 1TB
+1024TB ------- 1PB
