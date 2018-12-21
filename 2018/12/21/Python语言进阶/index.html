@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    何萧的专属栏
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">MICCALL</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2></h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>数据结构和算法</p>
+<p>排序算法（冒泡和归并）</p>
+<p>def bubble_sort(items, comp=lambda x, y: x &gt; y):<br>    “””高质量冒泡排序(搅拌排序)”””<br>    for i in range(len(items) - 1):<br>        swapped = False<br>        for j in range(len(items) - 1 - i):<br>            if comp(items[j], items[j + 1]):<br>                items[j], items[j + 1] = items[j + 1], items[j]<br>                swapped = True<br>        if swapped:<br>            swapped = False<br>            for j in range(len(items) - 2 - i, i, -1):<br>                if comp(items[j - 1], items[j]):<br>                    items[j], items[j - 1] = items[j - 1], items[j]<br>                    swapped = True<br>        if not swapped:<br>            break<br>def merge_sort(items, comp=lambda x, y: x &lt;= y):<br>    “””归并排序(分治法)”””<br>    if len(items) &lt; 2:<br>        return items[:]<br>    mid = len(items) // 2<br>    left = merge_sort(items[:mid], comp)<br>    right = merge_sort(items[mid:], comp)<br>    return merge(left, right, comp)</p>
+<p>def merge(items1, items2, comp=lambda x, y: x &lt;= y):<br>    “””合并(将两个有序的列表合并成一个有序的列表)”””<br>    items = []<br>    idx1, idx2 = 0, 0<br>    while idx1 &lt; len(items1) and idx2 &lt; len(items2):<br>        if comp(items1[idx1], items2[idx2]):<br>            items.append(items1[idx1])<br>            idx1 += 1<br>        else:<br>            items.append(items2[idx2])<br>            idx2 += 1<br>    items += items1[idx1:]<br>    items += items2[idx2:]<br>    return items<br>def seq_search(items, key):<br>    “””顺序查找”””<br>    for index, item in enumerate(items):<br>        if item == key:<br>            return index<br>    return -1<br>查找算法（顺序和折半）</p>
+<p>def bin_search(items, key):<br>    “””折半查找(循环实现)”””<br>    start, end = 0, len(items) - 1<br>    while start &lt;= end:<br>        mid = (start + end) // 2<br>        if key &gt; items[mid]:<br>            start = mid + 1<br>        elif key &lt; items[mid]:<br>            end = mid - 1<br>        else:<br>            return mid<br>    return -1<br>使用生成式（推导式）</p>
+<p>prices = {<br>    ‘AAPL’: 191.88,<br>    ‘GOOG’: 1186.96,<br>    ‘IBM’: 149.24,<br>    ‘ORCL’: 48.44,<br>    ‘ACN’: 166.89,<br>    ‘FB’: 208.09,<br>    ‘SYMC’: 21.29<br>}</p>
+<h1 id="用股票价格大于100元的股票构造一个新的字典"><a href="#用股票价格大于100元的股票构造一个新的字典" class="headerlink" title="用股票价格大于100元的股票构造一个新的字典"></a>用股票价格大于100元的股票构造一个新的字典</h1><p>prices2 = {key: value for key, value in prices.items() if value &gt; 100}<br>print(prices2)<br>嵌套的列表</p>
+<p>def main():<br>    names = [‘关羽’, ‘张飞’, ‘赵云’, ‘马超’, ‘黄忠’]<br>    courses = [‘语文’, ‘数学’, ‘英语’]</p>
+<pre><code># 录入五个学生三门课程的成绩
+# 错误 - 参考http://pythontutor.com/visualize.html#mode=edit
+# scores = [[None] * len(courses)] * len(names)
+scores = [[None] * len(courses) for _ in range(len(names))]
+for row, name in enumerate(names):
+    for col, course in enumerate(courses):
+        scores[row][col] = float(input(f&apos;请输入{name}的{course}成绩: &apos;))
+print(scores)
+</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>Python Tutor - VISUALIZE CODE AND GET LIVE HELP</p>
+<p>heapq、itertools等的用法</p>
+<p>“””<br>从列表中找出最大的或最小的N个元素<br>“””<br>import heapq</p>
+<p>def main():<br>    list1 = [34, 25, 12, 99, 87, 63, 58, 78, 88, 92]<br>    list2 = [<br>        {‘name’: ‘IBM’, ‘shares’: 100, ‘price’: 91.1},<br>        {‘name’: ‘AAPL’, ‘shares’: 50, ‘price’: 543.22},<br>        {‘name’: ‘FB’, ‘shares’: 200, ‘price’: 21.09},<br>        {‘name’: ‘HPQ’, ‘shares’: 35, ‘price’: 31.75},<br>        {‘name’: ‘YHOO’, ‘shares’: 45, ‘price’: 16.35},<br>        {‘name’: ‘ACME’, ‘shares’: 75, ‘price’: 115.65}<br>    ]<br>    print(heapq.nlargest(3, list1))<br>    print(heapq.nsmallest(3, list1))<br>    print(heapq.nlargest(2, list2, key=lambda x: x[‘price’]))<br>    print(heapq.nlargest(2, list2, key=lambda x: x[‘shares’]))</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>“””<br>排列 / 组合 / 笛卡尔积<br>“””<br>import itertools</p>
+<p>def main():<br>    for val in itertools.permutations(‘ABCD’):<br>        print(val)<br>    print(‘-‘ <em> 50)<br>    for val in itertools.combinations(‘ABCDE’, 3):<br>        print(val)<br>    print(‘-‘ </em> 50)<br>    for val in itertools.product(‘ABCD’, ‘123’):<br>        print(val)</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>collections模块下的工具类</p>
+<p>“””<br>找出序列中出现次数最多的元素<br>“””<br>from collections import Counter</p>
+<p>def main():<br>    words = [<br>        ‘look’, ‘into’, ‘my’, ‘eyes’, ‘look’, ‘into’, ‘my’, ‘eyes’,<br>        ‘the’, ‘eyes’, ‘the’, ‘eyes’, ‘the’, ‘eyes’, ‘not’, ‘around’,<br>        ‘the’, ‘eyes’, “don’t”, ‘look’, ‘around’, ‘the’, ‘eyes’,<br>        ‘look’, ‘into’, ‘my’, ‘eyes’, “you’re”, ‘under’<br>    ]<br>    counter = Counter(words)<br>    print(counter.most_common(3))</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>穷举法、贪婪法、分治法、动态规划</p>
+<p>“””<br>穷举法 - 穷尽所有可能直到找到正确答案<br>“””</p>
+<p>def main():</p>
+<pre><code># 公鸡5元一只 母鸡3元一只 小鸡1元三只
+# 用100元买100只鸡 问公鸡/母鸡/小鸡各多少只
+for x in range(20):
+    for y in range(33):
+        z = 100 - x - y
+        if 5 * x + 3 * y + z // 3 == 100 and z % 3 == 0:
+            print(x, y, z)
+# A、B、C、D、E五人在某天夜里合伙捕鱼 最后疲惫不堪各自睡觉
+# 第二天A第一个醒来 他将鱼分为5份 扔掉多余的1条 拿走自己的一份
+# B第二个醒来 也将鱼分为5份 扔掉多余的1条 拿走自己的一份
+# 然后C、D、E依次醒来也按同样的方式分鱼 问他们至少捕了多少条鱼
+fish = 1
+while True:
+    total = fish
+    enough = True
+    for _ in range(5):
+        if (total - 1) % 5 == 0:
+            total = (total - 1) // 5 * 4
+        else:
+            enough = False
+            break
+    if enough:
+        print(fish)
+        break
+    fish += 1
+</code></pre><p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>“””<br>动态规划 - 适用于有重叠子问题和最优子结构性质的问题<br>使用动态规划方法所耗时间往往远少于朴素解法(用空间换取时间)<br>“””</p>
+<p>def fib(num, temp={}):<br>    “””用递归计算Fibonacci数”””<br>    if num in (1, 2):<br>        return 1<br>    try:<br>        return temp[num]<br>    except KeyError:<br>        temp[num] = fib(num - 1) + fib(num - 2)<br>        return temp[num]<br>函数的使用方式</p>
+<p>将函数视为“一等公民”</p>
+<p>高阶函数的用法（filter、map以及它们的替代品）</p>
+<p>位置参数、可变参数、关键字参数、命名关键字参数</p>
+<p>参数的元信息（代码可读性问题）</p>
+<p>匿名函数和内联函数的用法（lambda函数）</p>
+<p>闭包和作用域问题（LEGB）</p>
+<p>装饰器函数（使用装饰器和取消装饰器）</p>
+<p>输出函数执行时间的装饰器。</p>
+<p>from functools import wraps<br>from time import time</p>
+<p>def record(output):</p>
+<pre><code>def decorate(func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time()
+        result = func(*args, **kwargs)
+        output(func.__name__, time() - start)
+        return result
+
+    return wrapper
+
+return decorate
+</code></pre><p>from functools import wraps<br>from time import time</p>
+<p>class Record(object):</p>
+<pre><code>def __init__(self, output):
+    self.output = output
+
+def __call__(self, func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time()
+        result = func(*args, **kwargs)
+        self.output(func.__name__, time() - start)
+        return result
+
+    return wrapper
+</code></pre><p>用装饰器来实现单例模式。</p>
+<p>from functools import wraps</p>
+<p>def singleton(cls):<br>    instances = {}</p>
+<pre><code>@wraps(cls)
+def wrapper(*args, **kwargs):
+    if cls not in instances:
+        instances[cls] = cls(*args, **kwargs)
+    return instances[cls]
+
+return wrapper
+</code></pre><p>@singleton<br>class Singleton(object):<br>    pass<br>面向对象相关知识</p>
+<p>三大支柱：封装、继承、多态</p>
+<p>“””<br>月薪结算系统<br>部门经理每月15000 程序员每小时200 销售员1800底薪+销售额5%提成<br>“””<br>from abc import ABCMeta, abstractmethod</p>
+<p>class Employee(metaclass=ABCMeta):<br>    “””员工(抽象类)”””</p>
+<pre><code>def __init__(self, name):
+    self._name = name
+
+@property
+def name(self):
+    &quot;&quot;&quot;姓名&quot;&quot;&quot;
+    return self._name
+
+@abstractmethod
+def get_salary(self):
+    &quot;&quot;&quot;结算月薪(抽象方法)&quot;&quot;&quot;
+    pass
+</code></pre><p>class Manager(Employee):<br>    “””部门经理”””</p>
+<pre><code>def get_salary(self):
+    return 15000.0
+</code></pre><p>class Programmer(Employee):<br>    “””程序员”””</p>
+<pre><code>def __init__(self, name):
+    self._working_hour = 0
+    super().__init__(name)
+
+@property
+def working_hour(self):
+    &quot;&quot;&quot;工作时间&quot;&quot;&quot;
+    return self._working_hour
+
+@working_hour.setter
+def working_hour(self, hour):
+    self._working_hour = hour if hour &gt; 0 else 0
+
+def get_salary(self):
+    return 200.0 * self.working_hour
+</code></pre><p>class Salesman(Employee):<br>    “””销售员”””</p>
+<pre><code>def __init__(self, name):
+    self._sales = 0.0
+    super().__init__(name)
+
+@property
+def sales(self):
+    return self._sales
+
+@sales.setter
+def sales(self, sales):
+    self._sales = sales if sales &gt; 0 else 0
+
+def get_salary(self):
+    return 1800.0 + self.sales * 0.05
+</code></pre><p>def main():<br>    emps = [<br>        Manager(‘刘备’), Manager(‘曹操’), Programmer(‘许褚’),<br>        Salesman(‘貂蝉’), Salesman(‘赵云’), Programmer(‘张辽’),<br>        Programmer(‘关羽’), Programmer(‘周瑜’)<br>    ]<br>    for emp in emps:<br>        if isinstance(emp, Programmer):<br>            emp.working_hour = int(input(‘本月工作时间: ‘))<br>        elif isinstance(emp, Salesman):<br>            emp.sales = float(input(‘本月销售额: ‘))<br>        print(‘%s: %.2f元’ % (emp.name, emp.get_salary()))</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>对象的复制（深复制/深拷贝/深度克隆和浅复制/浅拷贝/影子克隆）</p>
+<p>垃圾回收、循环引用和弱引用</p>
+<p>Python使用了自动化内存管理，这种管理机制以引用计数为基础，同时也引入了标记-清除和分代收集两种机制为辅的策略。</p>
+<p>typedef struct_object {<br>    /<em> 引用计数 </em>/<br>    int ob_refcnt;<br>    /<em> 对象指针 </em>/<br>    struct_typeobject <em>ob_type;<br>} PyObject;<br>/</em> 增加引用计数的宏定义 */</p>
+<p>#define Py_INCREF(op)   ((op)-&gt;ob_refcnt++)<br>/<em> 减少引用计数的宏定义 </em>/</p>
+<p>#define Py_DECREF(op) \ //减少计数<br>    if (–(op)-&gt;ob_refcnt != 0) \<br>        ; \<br>    else \<br>        __Py_Dealloc((PyObject *)(op))<br>导致引用计数+1的情况：</p>
+<p>对象被创建，例如a = 23<br>对象被引用，例如b = a<br>对象被作为参数，传入到一个函数中，例如f(a)<br>对象作为一个元素，存储在容器中，例如list1 = [a, a]<br>导致引用计数-1的情况：</p>
+<p>对象的别名被显式销毁，例如del a<br>对象的别名被赋予新的对象，例如a = 24<br>一个对象离开它的作用域，例如f函数执行完毕时，f函数中的局部变量（全局变量不会）<br>对象所在的容器被销毁，或从容器中删除对象<br>引用计数可能会导致循环引用问题，而循环引用会导致内存泄露，如下面的代码所示。为了解决这个问题，Python中引入了“标记-清除”和“分代收集”。在创建一个对象的时候，对象被放在第一代中，如果在第一代的垃圾检查中对象存活了下来，该对象就会被放到第二代中，同理在第二代的垃圾检查中对象存活下来，该对象就会被放到第三代中。</p>
+<p>list1 = []<br>list2 = []<br>list1.append(list2)<br>list2.append(list1)<br>以下情况会导致垃圾回收：</p>
+<p>调用gc.collect()<br>gc模块的计数器达到阀值<br>程序退出<br>如果循环引用中两个对象都定义了<strong>del</strong>方法，gc模块不会销毁这些不可达对象，因为gc模块不知道应该先调用哪个对象的<strong>del</strong>方法，这个问题在Python 3.6中得到了解决。</p>
+<p>也可以通过weakref模块构造弱引用的方式来解决循环引用的问题。</p>
+<p>魔法属性和方法（请参考《Python魔法方法指南》）</p>
+<p>有几个小问题请大家思考：</p>
+<p>自定义的对象能不能使用运算符做运算？<br>自定义的对象能不能放到set中？能去重吗？<br>自定义的对象能不能作为dict的键？<br>自定义的对象能不能使用上下文语法？<br>混入（Mixin）</p>
+<p>“””<br>限制字典只有在指定的key不存在时才能设置键值对<br>MRO - Method Resolution Order - 多重继承时的方法解析顺序<br>“””</p>
+<p>class SetOnceMappingMixin:<br>    <strong>slots</strong> = ()</p>
+<pre><code>def __setitem__(self, key, value):
+    if key in self:
+        raise KeyError(str(key) + &apos; already set&apos;)
+    return super().__setitem__(key, value)
+</code></pre><p>class SetOnceDict(SetOnceMappingMixin, dict):<br>    pass</p>
+<p>def main():<br>    dict1 = SetOnceDict()<br>    try:<br>        dict1[‘username’] = ‘jackfrued’<br>        dict1[‘username’] = ‘hellokitty’<br>        dict1[‘username’] = ‘wangdachui’<br>    except KeyError:<br>        pass<br>    print(dict1)</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>元编程和元类</p>
+<p>用元类实现单例模式。</p>
+<p>“””<br>通过元类实现单例模式<br>“””</p>
+<p>class SingletonMeta(type):<br>    “””单例的元类”””</p>
+<pre><code>def __init__(cls, *args, **kwargs):
+    cls.__instance = None
+    super().__init__(*args, **kwargs)
+
+def __call__(cls, *args, **kwargs):
+    if cls.__instance is None:
+        cls.__instance = super().__call__(*args, **kwargs)
+    return cls.__instance
+</code></pre><p>class Singleton(metaclass=SingletonMeta):<br>    “””单例类”””</p>
+<pre><code>def __init__(self, name):
+    self._name = name
+    from random import randrange
+    self._value = randrange(100000)
+
+@property
+def name(self):
+    return self._name
+
+@property
+def value(self):
+    return self._value
+</code></pre><p>def main():<br>    sin1 = Singleton(‘Lee’)<br>    sin2 = Singleton(‘Wang’)<br>    print(sin1 == sin2)<br>    print(sin1.value, sin2.value)<br>    print(sin1.name, sin2.name)</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>迭代器和生成器</p>
+<p>“””<br>生成器和迭代器<br>“””</p>
+<p>def fib1(num):<br>    “””普通函数”””<br>    a, b = 0, 1<br>    for _ in range(num):<br>        a, b = b, a + b<br>    return a</p>
+<p>def fib2(num):<br>    “””生成器”””<br>    a, b = 0, 1<br>    for _ in range(num):<br>        a, b = b, a + b<br>        yield a</p>
+<p>class Fib3:<br>    “””迭代器”””</p>
+<pre><code>def __init__(self, num):
+    self.num = num
+    self.a, self.b = 0, 1
+    self.idx = 0
+
+def __iter__(self):
+    return self
+
+def __next__(self):
+    if self.idx &lt; self.num:
+        self.a, self.b = self.b, self.a + self.b
+        self.idx += 1
+        return self.a
+    raise StopIteration()
+</code></pre><p>def main():<br>    for val in fib2(20):<br>        print(val)<br>    print(‘-‘ * 50)<br>    for val in Fib3(20):<br>        print(val)</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    main()<br>并发编程</p>
+<p>多线程和多进程<br>协程和异步I/O<br>concurrent.futures</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/12/21/Python语言进阶/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/12/21/Python语言进阶/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
