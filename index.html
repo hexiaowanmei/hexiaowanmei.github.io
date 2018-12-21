@@ -63,6 +63,13 @@
     <script src="/js/main.js"></script>
 	
 </head>
+	function randomColor() {
+	var r = parseInt(Math.random() * 256);
+	var g = parseInt(Math.random() * 256);
+	var b = parseInt(Math.random() * 256);
+	var a = Math.random();
+	return 'rgb(' + r + ', ' + g + ', ' + b + ',' + a + ')';
+}
     
 		<body class="is-loading">
     <!-- Wrapper 外包 s-->
@@ -315,6 +322,8 @@
                 <!-- 文章sample  e-->
             
             </div>
+	var rcolor = document.getElementsByClassName('link_row')
+	rcolor.style.backgroundColor=randomColor();
         </section>
         </div>
         <!-- 文章列表   end -->
